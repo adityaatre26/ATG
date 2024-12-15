@@ -1,0 +1,135 @@
+input::placeholder {
+  color: #555555;
+}
+
+.mobile-button {
+  display: none;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  margin-left: 30px !important;
+}
+
+.modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-body h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-body input {
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal-body button {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+.modal-body .text-end a {
+  text-decoration: underline;
+}
+
+.modal-body img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .mobile-button {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+
+  .modal-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 1rem;
+  }
+
+  .modal-body h5 {
+    font-size: 1.2rem;
+  }
+
+  .modal-body input {
+    padding: 0.5rem;
+  }
+
+  .modal-body button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .modal-body img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navnav {
+    padding: 0.5rem;
+  }
+
+  .mobile-button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .modal-body h5 {
+    font-size: 1.1rem;
+  }
+
+  .modal-body button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navnav .searchBar {
+    display: none !important;
+  }
+  .mobile-button {
+    display: flex !important;
+  }
+  .navnav .lg-button {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .navnav .searchBar {
+    display: flex !important;
+  }
+  .mobile-button {
+    display: none !important;
+  }
+  .navnav .lg-button {
+    display: inline-block !important;
+  }
+}
